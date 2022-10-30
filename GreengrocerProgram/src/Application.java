@@ -25,7 +25,7 @@ public class Application {
 		String inputBananas = sc.nextLine();
 		Double parseBananas = Double.parseDouble(inputBananas);
 		
-		// Patlýcan'dan sonra bir daha input giriþi olmayacaðý için parse etmeden direk double olarak aldýk.
+		// PatlÃ½can'dan sonra bir daha input giriÃ¾i olmayacaÃ°Ã½ iÃ§in parse etmeden direk double olarak aldÃ½k.
 		System.out.println("How many kilograms of eggplants?");
 		Double inputEggplant = sc.nextDouble();
 		
@@ -42,12 +42,13 @@ public class Application {
 		double kilogramsOfEggplant = greengrocer.calculateEggplant(inputEggplant);
 		
 		double total = kilogramsOfPears + kilogramsOfApples + kilogramsOfTomatoes + kilogramsOfBananas + kilogramsOfEggplant;
-		System.out.println("How many kilograms of pears? -- > " + kilogramsOfPears + "\n"
-							+ "How many kilograms of apples? -- > " + kilogramsOfApples + "\n" 
-							+ "How many kilograms of tomatoes? -- > " + kilogramsOfTomatoes  + "\n"
-							+ "How many kilograms of bananas? -- > " + kilogramsOfBananas + "\n"
-							+ "How many kilograms of eggplant? -- > " + kilogramsOfEggplant+ "\n"
-							+ "Total --- > " + total);
+		System.out.println(
+					"Price of pears -- > " + kilogramsOfPears + "\n"
+					+ "Price of apples -- > " + kilogramsOfApples + "\n" 
+					+ "Price of tomatoes -- > " + kilogramsOfTomatoes  + "\n"
+					+ "Price of bananas -- > " + kilogramsOfBananas + "\n"
+					+ "Price of eggplant -- > " + kilogramsOfEggplant+ "\n"
+					+ "Total --- > " + total);
 	}
 	
 	
